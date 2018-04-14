@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+}
+body#home-page { 
+    background-image: url("background.jpg");
+
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body#play-page { 
+    background-image: url("stadium2.jpg");
+
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#play-button{
+    margin:25% 45%;
+    font-size: 45px;
+    font-family: fantasy;
+    border-radius:10%;
+
+}
+.modal-header{
+    color: red;
+    font-family: fantasy;
+}
+#runs, #runs2{
+    float: right;
+}
+h2{
+    display:inline;
+    color:white;
+    background-color: red;
+    border-top:2px solid white;
+    border-right: 2px solid white;
+}
+span{
+    color: red;
+    background-color:pink;
+}
+#results{
+    color: red;
+    background-color:white;
+}
+#playAgain{
+    display: inline;
+    color:black;
+    background-color: yellow;
+}
+marquee{
+    color: maroon;
+    border:1px solid skyblue;
+    background-color: aqua;
+}

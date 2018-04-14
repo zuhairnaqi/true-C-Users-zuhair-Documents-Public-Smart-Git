@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cricket Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="game.css" type="text/css">
+
+</head>
+<body id="home-page">
+    <h1 class="modal-header">The Circket Game 2018</h1>
+
+    <marquee direction="left" id="marquee">Welcome to The Cricket Game 2018. This Match has only 2 overs.Both Teams have 2 wickets.</marquee>
+
+
+    <div id="teamA">    
+      <h2>Team A Score:<b id="score"></b><b id="runs" class="btn btn-warning"></b></h2> 
+      <span id="endMatch1"></span>  
+
+    </div>
+      <br><br>
+    <div id="teamB">  
+      <h2>Team B Score:<b id="score2"></b><b id="runs2" class="btn btn-warning"></b></h2> 
+     <span id="endMatch2"></span>  
+    </div> 
+    <br><br>
+    <div id="conclution">
+     <h2 id="results"></h2><br>
+     <h3 id="playAgain"></h3>
+    </div>
+     <!-- <input type="button" name="Team A" value="" onClick="OnBall()" id="team-a-button"> -->
+
+     <button type="button" class="btn btn-warning" id="button" onClick="OnBall()">Team A</button>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
