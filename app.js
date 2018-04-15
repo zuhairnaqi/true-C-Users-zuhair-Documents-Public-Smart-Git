@@ -54,8 +54,9 @@ function OnBall(){
             team1Score += number;
             teamARuns.innerHTML=number;
                 count +=1;
+                
                 showScore1.innerHTML=team1Score;
-                endOver1.innerHTML="<br><br>Team A has Matched over <br> Team A Targeted:" + (team1Score + 1);
+                endOver1.innerHTML="<br><br>Team A has Matched over with " + out + " wickets<br> Team A Targeted:" + (team1Score + 1);
                 button.innerHTML="Click to Start Match Of B Team!";
                 marquee.innerHTML="Now Team B's turn.Let see Team B will beat Team A or Not."
                 return false;
@@ -66,9 +67,10 @@ function OnBall(){
         if(count===12){
             button.innerHTML="Team B";
              count +=1;
+             out=0;
         }
         else if(count>=13 && count<25){
-                if(out===4){
+                if(out===2){
                 alert("Team B Both Players Are Out.");
                 count=25;
                 }
@@ -85,7 +87,7 @@ function OnBall(){
                   }
          }
         else if(count===25){
-                     endOver2.innerHTML="<br><br>Team B has Match over <br> Team B runs: " + (team2Score);
+                     endOver2.innerHTML="<br><br>Team B has Match over with " + out + " wickets <br> Team B runs: " + (team2Score);
                    var winner ;
                if(team1Score>team2Score){
                     result.innerHTML= "Team A beats Team B by " + (team1Score-team2Score) + " Runs";
@@ -100,7 +102,7 @@ function OnBall(){
              count +=1;
              return false;
           }
-    showScore2.innerHTML=team2Score + "/" + (out-2);
+    showScore2.innerHTML=team2Score + "/" + (out);
     }
     else if(count===26){
         window.location.reload();
