@@ -2,7 +2,7 @@
 //First Page Code 
 
 function selectTeam(){
-    window.location.assign("file:///C:/Users/ZUHAIR/Documents/Public/Game/index2.html");
+    window.location.assign("index2.html");
     console.log("hello");
 }
 
